@@ -1,14 +1,9 @@
 {
   "private": true,
   "author": {
-    "name": "Doinel Atanasiu",
-    "email": "doinel1atanasiu@gmail.com",
-    "url": "https://business-link.d1a.app"
+    "name": "three "
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/doinel1a/webpack-three-js"
-  },
+
   "license": "MIT",
   "scripts": {
     "postinstall": "husky & playwright install",
