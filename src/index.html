@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ESSENTIAL -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- GENERAL -->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- prettier-ignore -->
+    <link rel="manifest" href=<%= htmlWebpackPlugin.options.manifest %>
+    />
+    <!-- prettier-ignore -->
+    <link rel="icon" sizes="192x192" href=<%= htmlWebpackPlugin.options.icon192 %>
+    />
+    <!-- prettier-ignore -->
+    <link rel="icon" sizes="512x512" href=<%= htmlWebpackPlugin.options.icon512 %>
+    />
+
+    <!-- GOOGLE -->
+    <meta name="rating" content="General" />
+    <meta name="robots" content="index,follow" />
+    <!-- prettier-ignore -->
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href=<%= htmlWebpackPlugin.options.sitemap %>
+    />
+    <meta
+      name="google-site-verification"
+      content="43hCqye5FYTS4SnBMPKNFP-wBhfLHwRBykWJF1WJawo"
+    />
+
+    <!-- FACEBOOK -->
+    <!-- prettier-ignore -->
+    <meta property="og:type" content="website">
+    <!-- prettier-ignore -->
+    <meta property="og:image" content=<%= htmlWebpackPlugin.options.ogImmage %>
+    />
+
+    <!-- TWITTER -->
+    <!-- prettier-ignore -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- prettier-ignore -->
+    <meta name="twitter:image" content=<%= htmlWebpackPlugin.options.ogImmage %>
+    />
+
+    <!-- iOS -->
+    <!-- prettier-ignore -->
+    <link rel="apple-touch-icon" href=<%= htmlWebpackPlugin.options.icon512 %>
+    />
+    <!-- prettier-ignore -->
+    <link rel="mask-icon" href=<%= htmlWebpackPlugin.options.icon512 %>
+    color="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- ANDROID -->
+    <meta name="theme-color" content="#000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <script defer src="/_vercel/insights/script.js"></script>
+  </head>
+
+  <body>
+    <noscript class="text-center text-lg text-red-500">
+      Enable JavaScript to enjoy all the features of this app.
+    </noscript>
+    <main class="flex h-full bg-primary text-color">
+      <header
+        class="absolute top-0 z-[1] w-full cursor-default bg-accent-primary sm:w-auto"
+      >
+
+      </header>
+      <canvas id="canvas" class="z-[0] h-full w-full"></canvas>
+      <canvas id="canvas2" class="z-[0] h-full w-full"></canvas>
+    
+    </main>
+  </body>
+</html>
